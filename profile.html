@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a class="navbar-brand" href="#"><img src="assets/netflix_logo.png" alt="logo" width="80" height="auto"></a>
+
+    <main>
+        <div class="d-flex justify-content-center">
+            <div id="editProfile">
+                <h1>Edit Profile</h1>
+                <hr>
+                <div class="d-flex">
+                    <img src="assets/avatarnetflix.jpg" alt="" width="100px" height="100px">
+                    <div class="p-2">
+                        <h4>Strive student</h4>
+                        <div class="dropdown col-md-3">
+                            <h5>Language:</h5>
+                            <a id="genresBtn" class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              English
+                            </a>
+                            <hr>
+                          
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Italiano</a></li>
+                              <li><a class="dropdown-item" href="#">Spagnolo</a></li>
+                              <li><a class="dropdown-item" href="#">Tedesco</a></li>
+                            </ul>
+                        </div>
+                        <h5>Maturity Settings:</h5>
+                        <h4>ALL MATURITY RATINGS</h4>
+                        <small>Show titles of all maturity ratings for this profile</small><br>
+                        <button type="button" class="btn btn-outline-secondary my-4">EDIT</button>
+                        <hr>
+                        <h5>Autoplay controls</h5>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"><small>Autoplay next episode in a series on all devices.</small></label>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"><small>Autoplay previews while browsing on all devices.</small></label>
+                          </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="d-flex justify-content-evenly">
+                    <button type="button" class="btn btn-outline-secondary my-4">SAVE</button>
+                    <button type="button" class="btn btn-outline-secondary my-4">CANCEL</button>
+                    <button type="button" class="btn btn-outline-secondary my-4">DELETE PROFILE</button>
+    
+                </div>
+    
+                
+    
+            </div>
+
+        </div>
+
+
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

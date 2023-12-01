@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Netflix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!--Navbar e menù profilo personale-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/netflix_logo.png" alt="logo" width="80" height="auto"></a>
+            <button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            TV Shows
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Movies
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recently Added
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            My List
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="profile.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Edit Profile
+                        </a>
+
+                    </li>
+                    
+                </ul>
+
+
+                <div class="d-flex justify-content-end">
+                    <div class="bell-icon position-relative mt-2 me-2">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="bell-icon position-relative mt-2 me-2">
+                        <a>KIDS</a>
+                    </div>
+                    <div class="bell-icon position-relative mt-2 me-2">
+                        <i class="bi bi-bell"></i>
+                    </div>
+                    <div class="avatar-icon dropdown position-relative bg-light mt-2">
+                        <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="dot bg-green position-absolute bottom-right"></span>
+                            <div class="avatar-dropdown dropdown-menu dropdown-menu-end border-0 shadow-lg py-3"
+                                aria-label="User Account">
+                                <div class="d-flex px-3 pb-1" style="gap: 6px">
+                                    <div class="avatar-icon  position-relative bg-light me-2">
+                                        <span class="dot bg-green position-absolute bottom-right"></span>
+                                    </div>
+                                    <div class="avatar-menu-header">
+                                        <h5 class="font-sm mb-0">Fabrizio D'Alessandro</h5>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="#">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span class="ms-2">Profile</span></a>
+                                <a class="dropdown-item px-3" href="/profile.html">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <span class="ms-2">Subscription</span></a>
+                                <a class="dropdown-item px-3" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-settings">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path
+                                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                        </path>
+                                    </svg>
+                                    <span class="ms-2">Settings</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-power">
+                                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                                        <line x1="12" y1="2" x2="12" y2="12"></line>
+                                    </svg>
+                                    <span class="ms-2">Sign Out</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row mb-4">
+                <h1 class="col-md-2">TV Shows</h1>
+                <div class="dropdown col-md-3">
+                    <a id="genresBtn" class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Genres
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Comedy</a></li>
+                      <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+
+        <!--Sezione Film-->
+        <div class="container">
+            <h2 class="text-light">Trending Now</h2>
+            <div class="wrapper">
+                <section id="section1">
+                    <a href="#section2">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media10.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media11.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media12.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media13.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media15.jpg" alt="">
+                    </div>
+                    <a href="#section2">›</a>
+                </section>
+                <section id="section2">
+                    <a href="#section1">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media17.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media18.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media20.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media24.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media27.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media28.jpg" alt="Describe Image">
+                    </div>
+                </section>
+            </div>
+            <h2 class="text-light">Watch It Again</h2>
+            <div class="wrapper">
+                <section id="section3">
+                    <a href="#section4">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media27.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media17.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media29.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media6.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media28.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media30.jpg" alt="">
+                    </div>
+                    <a href="#section4">›</a>
+                </section>
+                <section id="section4">
+                    <a href="#section3">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media24.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media28.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media12.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media32.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media9.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media6.jpg" alt="Describe Image">
+                    </div>
+                </section>
+            </div>
+            <h2 class="text-light">New Releases</h2>
+            <div class="wrapper">
+                <section id="section5">
+                    <a href="#section6">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media9.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media6.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media4.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media32.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media20.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media24.jpg" alt="">
+                    </div>
+                    <a href="#section6">›</a>
+                </section>
+                <section id="section6">
+                    <a href="#section5">‹</a>
+                    <div class="item">
+                        <img src="assets/media/media11.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media15.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media1.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media12.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media27.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                        <img src="assets/media/media13.jpg" alt="Describe Image">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="text-start">
+        <!-- Sezione Social media -->
+        <section class=" row mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="col-1 btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="col-1 btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="col-1 btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-twitter"></i>
+            </a>
+
+            <!-- Youtube -->
+            <a data-mdb-ripple-init class="col-1 btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-youtube"></i>
+            </a>
+
+        </section>
+
+        <!-- Sezione Links -->
+
+            <div class="row">
+
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">Audio and Subtitles</a>
+                        </li>
+                        <li>
+                            <a href="#!">Media Center</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Conctact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">Audio Description</a>
+                        </li>
+                        <li>
+                            <a href="#!">Investor Relations</a>
+                        </li>
+                        <li>
+                            <a href="#!">Legal Notices</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#!">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#!">Cookie Preferences</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#!">Corporate Information</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        <button type="button" class="btn btn-outline-secondary my-4">Service Code</button>
+        <!-- Copyright -->
+        <div class="text-start">
+            <small>© 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</small>
+        </div>
+
+    </footer>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
